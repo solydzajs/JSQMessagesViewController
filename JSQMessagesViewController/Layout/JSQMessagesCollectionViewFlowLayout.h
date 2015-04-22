@@ -56,7 +56,10 @@ FOUNDATION_EXPORT const CGFloat kJSQMessagesCollectionViewAvatarSizeDefault;
 /**
  *  The collection view object currently using this layout object.
  */
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincompatible-property-type"
 @property (readonly, nonatomic) JSQMessagesCollectionView *collectionView;
+#pragma clang diagnostic pop
 
 /**
  *  Specifies whether or not the layout should enable spring behavior dynamics for its items using `UIDynamics`.
